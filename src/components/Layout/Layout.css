@@ -1,17 +1,35 @@
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 24px 24px 40px;
 }
 
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 16px;
+  gap: 20px;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .container { padding: 20px; }
+  .layout { grid-template-columns: 1.6fr 1fr; gap: 16px; }
+}
+
+/* Tablet portrait and below */
+@media (max-width: 768px) {
+  .container { padding: 16px; }
+  .layout { grid-template-columns: 1fr; gap: 14px; }
+  .col { gap: 12px; }
+}
+
+/* Orientation-specific tweaks */
+@media (orientation: landscape) and (max-width: 900px) {
+  .container { padding: 16px 18px; }
 }

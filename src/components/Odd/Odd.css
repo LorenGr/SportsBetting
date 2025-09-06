@@ -34,7 +34,7 @@
 
 .odds-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 .odds {
@@ -63,4 +63,12 @@
 .odds-price {
   text-align: center;
   font-weight: 700;
+}
+
+/* Tighter layout on small screens */
+@media (max-width: 420px) {
+  .match-card { padding: 10px 12px; }
+  .odds-grid { gap: 8px; }
+  .odds { padding: 8px 10px; }
+  .odds-price { font-size: 14px; }
 }

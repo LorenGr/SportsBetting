@@ -3,17 +3,18 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
+.header-right { display: flex; align-items: center; gap: 12px; }
 .logo {
   font-weight: 700;
   letter-spacing: 0.2px;
+  font-size: 16px;
 }
-.badge {
-  color: #8b93a5;
-  font-size: 12px;
+.badge { color: #8b93a5; font-size: 12px; }
+
+@media (max-width: 480px) {
+  .logo { font-size: 14px; }
+  .badge { display: none; }
 }
