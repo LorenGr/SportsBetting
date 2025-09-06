@@ -1,0 +1,66 @@
+.match-card {
+  padding: 12px;
+  background: var(--container-bg);
+  color: var(--text-color);
+  border-radius: var(--radius-md);
+  border: var(--container-border);
+}
+.match-header {
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+.match-header-sport {
+  margin-left: 6px;
+  display: inline-block;
+  opacity: 0.5;
+}
+.match-header-divider {
+  margin-left: 8px;
+  margin-right: 11px;
+
+  &::after {
+    content: "/";
+    display: block;
+    width: 1px;
+  }
+}
+.match-date {
+  margin-top: 12px;
+  color: inherit;
+  font-size: 12px;
+}
+
+.odds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.odds {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 6px;
+  border: var(--container-border);
+  border-style: dashed;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  color: inherit;
+}
+.odds:hover {
+  border-color: var(--text-color);
+}
+.odds.selected {
+  border: var(--container-border);
+  background: rgba(34, 197, 94, 0.3);
+}
+.odds-label {
+  text-align: center;
+  color: inherit;
+}
+.odds-price {
+  text-align: center;
+  font-weight: 700;
+}

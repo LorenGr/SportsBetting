@@ -1,0 +1,19 @@
+.theme-toggle {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  color: #ffffff;
+}
+.theme-toggle.light {
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #000000;
+}
+.theme-toggle svg {
+  display: block;
+}

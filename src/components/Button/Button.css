@@ -1,0 +1,40 @@
+.btn {
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  opacity: 0.8;
+  svg {
+    color: var(--text-color);
+  }
+}
+.btn.filled {
+  padding: 10px 12px;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: white;
+}
+.btn.outlined {
+  padding: 10px 12px;
+  border: var(--container-border);
+  background: transparent;
+  color: inherit;
+  opacity: 0.7;
+}
+.btn.outlined:hover {
+  opacity: 1;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+.btn.full {
+  width: 100%;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: grey;
+  border-color: grey;
+}

@@ -1,0 +1,29 @@
+.selection-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "title chip" "sub sub" "outcome price";
+  gap: 4px;
+  border-radius: var(--radius-md);
+  border: var(--container-border);
+  padding: 20px;
+  background: var(--container-bg);
+}
+.selection-title {
+  grid-area: title;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.selection-sub {
+  grid-area: sub;
+  color: #8b93a5;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.selection-outcome {
+  grid-area: outcome;
+}
+.selection-price {
+  grid-area: price;
+  text-align: right;
+}

@@ -1,0 +1,11 @@
+.input {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: var(--container-border);
+  background: transparent;
+  color: inherit;
+}
+.input:focus {
+  outline: 2px solid #334155;
+  border-color: #334155;
+}

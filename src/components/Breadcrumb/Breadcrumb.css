@@ -1,0 +1,22 @@
+.breadcrumb {
+  background: var(--container-bg);
+  border: var(--container-border);
+  border-style: dashed;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.crumb {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.crumb.active {
+  opacity: 1;
+  font-weight: 600;
+}
+.sep {
+  color: #64748b;
+  margin: 0 6px;
+}
