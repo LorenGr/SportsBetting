@@ -35,7 +35,7 @@ export function BetProvider({ children }) {
       const event = events.find(e => e.id === eventId);
       if (!event) return prev;
       const market = Object.values(event.bet)[0];
-      const choice = market.choices.find(c => c.id === choiceId);
+      const choice = market.choices.find(choice => choice.id === choiceId);
       const [home, away] = extractTeamNames(event);
       
       const selection = {

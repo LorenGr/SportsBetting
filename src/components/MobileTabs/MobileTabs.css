@@ -46,11 +46,9 @@
     height: 20px;
     padding: 0 6px;
     border-radius: 10px;
-    font-size: 12px;
-    background: var(--container-bg);
-    border-color: var(--container-border);
-    border-style: dashed;
-    color: var(--primary-contrast);
+    font-size: 10px;
+    background: var(--text-color);
+    color: var(--bg-color);
   }
 
   .mobile-tab.attention {
