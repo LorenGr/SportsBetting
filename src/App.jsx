@@ -1,15 +1,16 @@
-"use client";
+'use client'
 
-import { BetProvider } from './contexts/BetContextProvider';
-import Layout from './components/Layout/Layout';
-import Breadcrumb from './components/Breadcrumb/Breadcrumb';
-import OddsList from './components/OddsList/OddsList';
-import BetSlip from './components/BetSlip/BetSlip';
-import MobileTabs from './components/MobileTabs/MobileTabs';
-import { useIsMobile } from './hooks/useIsMobile';
+import { BetProvider } from './contexts/BetContextProvider'
+import Layout from './components/Layout/Layout'
+import Breadcrumb from './components/Breadcrumb/Breadcrumb'
+import OddsList from './components/OddsList/OddsList'
+import BetSlip from './components/BetSlip/BetSlip'
+import MobileTabs from './components/MobileTabs/MobileTabs'
+import { useIsMobile } from './hooks/useIsMobile'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 function AppContent() {
-  const isMobile = useIsMobile(768);
+  const isMobile = useIsMobile(768)
   if (isMobile) {
     return (
       <Layout>
@@ -18,10 +19,11 @@ function AppContent() {
           <MobileTabs odds={<OddsList />} slip={<BetSlip />} />
         </div>
       </Layout>
-    );
+    )
   }
   return (
     <Layout>
+      <SpeedInsights />
       <div className="col">
         <Breadcrumb />
         <OddsList />
@@ -30,7 +32,7 @@ function AppContent() {
         <BetSlip />
       </div>
     </Layout>
-  );
+  )
 }
 
 export default function App() {
@@ -38,5 +40,5 @@ export default function App() {
     <BetProvider>
       <AppContent />
     </BetProvider>
-  );
+  )
 }
