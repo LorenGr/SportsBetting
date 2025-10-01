@@ -1,7 +1,7 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
-import nextPlugin from 'eslint-plugin-next'
+import prettierPlugin from 'eslint-plugin-prettier'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
@@ -11,8 +11,7 @@ export default defineConfig([
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
-      nextPlugin.configs['core-web-vitals'],
-      'plugin:prettier/recommended',
+      prettierPlugin.configs.recommended,
     ],
     languageOptions: {
       ecmaVersion: 2020,

@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
-    background: var(--bg-color);
+
     padding: 6px 0 8px;
   }
 
