@@ -3,6 +3,7 @@
 A small React + Vite app that demonstrates a betting UI.
 
 ## Live Demo
+
 https://sports-betting-delta.vercel.app/
 
 ## Run locally
