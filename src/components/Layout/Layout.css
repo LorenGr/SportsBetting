@@ -1,3 +1,34 @@
+.app-bg {
+  min-height: 100vh;
+  background: radial-gradient(
+      900px 450px at 5% -10%,
+      var(--bg-grad-radial-1),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 400px at 105% 0%,
+      var(--bg-grad-radial-2),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 350px at 20% 80%,
+      var(--bg-grad-radial-3),
+      transparent 65%
+    ),
+    radial-gradient(
+      600px 300px at 80% 90%,
+      var(--bg-grad-radial-4),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg-grad-linear-start) 0%,
+      var(--bg-grad-linear-end) 100%
+    );
+  background-attachment: fixed;
+}
+
+/* Gradient values come from theme CSS files via variables */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,18 +49,32 @@
 
 /* Tablet landscape */
 @media (max-width: 1024px) {
-  .container { padding: 20px; }
-  .layout { grid-template-columns: 1.6fr 1fr; gap: 16px; }
+  .container {
+    padding: 20px;
+  }
+  .layout {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 16px;
+  }
 }
 
 /* Tablet portrait and below */
 @media (max-width: 768px) {
-  .container { padding: 16px; }
-  .layout { grid-template-columns: 1fr; gap: 14px; }
-  .col { gap: 12px; }
+  .container {
+    padding: 16px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .col {
+    gap: 12px;
+  }
 }
 
 /* Orientation-specific tweaks */
 @media (orientation: landscape) and (max-width: 900px) {
-  .container { padding: 16px 18px; }
+  .container {
+    padding: 16px 18px;
+  }
 }

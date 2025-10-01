@@ -4,6 +4,19 @@
   --container-border: 1px solid rgba(0, 0, 0, 0.15);
   --text-color: #0f172a;
   --radius-md: 12px;
+
+  /* App background gradient variables (light) */
+  --bg-grad-linear-start: #f7fafc;
+  --bg-grad-linear-end: #ffffff;
+  --bg-grad-radial-1: rgba(99, 102, 241, 0.18); /* indigo */
+  --bg-grad-radial-2: rgba(236, 72, 153, 0.16); /* pink */
+  --bg-grad-radial-3: rgba(2, 132, 199, 0.12); /* sky darker */
+  --bg-grad-radial-4: rgba(245, 158, 11, 0.1); /* amber */
+
+  /* Scrollbar (light) */
+  --scrollbar-track: rgba(0, 0, 0, 0);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.28);
 }
 
 :root[data-theme="light"] * {
