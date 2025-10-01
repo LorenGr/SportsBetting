@@ -17,6 +17,7 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix"
   },
   "dependencies": {
+    "animejs": "^4.2.0",
     "eslint-config-next": "15.5.4",
     "next": "15.5.4",
     "react": "^19.1.1",
