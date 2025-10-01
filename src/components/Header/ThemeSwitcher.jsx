@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './ThemeSwitcher.css'
 import ThemeSun from '../Icon/ThemeSun'
 import ThemeMoon from '../Icon/ThemeMoon'
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState(() => {
-    return document.documentElement.getAttribute('data-theme') || 'dark'
-  })
+  const [theme, setTheme] = useState('dark')
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('theme')
+      const next = saved || theme;
+      setTheme(next)
+      document.documentElement.setAttribute('data-theme', next)
+    } catch {}
+  }, [])
 
   function toggleTheme() {
     const next = theme === 'dark' ? 'light' : 'dark'

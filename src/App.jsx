@@ -1,3 +1,5 @@
+"use client";
+
 import { BetProvider } from './contexts/BetContextProvider';
 import Layout from './components/Layout/Layout';
 import Breadcrumb from './components/Breadcrumb/Breadcrumb';
