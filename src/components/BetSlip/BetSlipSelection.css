@@ -1,12 +1,43 @@
 .selection-item {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-areas: "title chip" "sub sub" "outcome price";
+  grid-template-areas: 'title chip' 'sub sub' 'outcome price';
   gap: 4px;
   border-radius: var(--radius-md);
   border: var(--container-border);
   padding: 20px;
   background: var(--container-bg);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* Animation overlay sits on top until animation completes */
+.selection-anim-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.selection-item-container {
+  overflow: hidden;
+  padding: 0;
+  flex: none;
+}
+
+.selection-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 6px;
+}
+
+.selection-square {
+  background: currentColor;
+  border-radius: 6px;
+  opacity: 0.9;
 }
 .selection-title {
   grid-area: title;

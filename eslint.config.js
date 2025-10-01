@@ -12,6 +12,7 @@ export default defineConfig([
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
       nextPlugin.configs['core-web-vitals'],
+      'plugin:prettier/recommended',
     ],
     languageOptions: {
       ecmaVersion: 2020,
