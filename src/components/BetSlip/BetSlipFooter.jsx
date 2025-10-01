@@ -25,7 +25,7 @@ export default function BetSlipFooter() {
       <Button fullWidth variant="filled" disabled={selections.length === 0 || amount <= 0} onClick={handleSubmit} data-testid="bet-slip-submit">
         Submit bets
       </Button>
-      <div className="brand">GiG SportX 2025</div>
+     
     </>
   )
 }
