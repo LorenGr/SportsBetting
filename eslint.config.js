@@ -1,7 +1,7 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
-// Next.js handles refresh; remove vite-specific react-refresh
+import nextPlugin from 'eslint-plugin-next'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
@@ -11,7 +11,7 @@ export default defineConfig([
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
-      'next/core-web-vitals',
+      nextPlugin.configs['core-web-vitals'],
     ],
     languageOptions: {
       ecmaVersion: 2020,
