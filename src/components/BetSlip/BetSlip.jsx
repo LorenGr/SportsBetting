@@ -9,7 +9,7 @@ export default function BetSlip() {
 
   return (
     <div className="bet-slip" data-testid="bet-slip">
-      <h3 data-testid="bet-slip-title">My Choices</h3>
+      <h3 data-testid="bet-slip-title">Betslip</h3>
       <div className="divider" />
       <div className="selections" data-testid="bet-slip-selections">
         {selections.length === 0 ? (
