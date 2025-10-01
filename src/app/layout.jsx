@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'SportsBettingApp',
-  description: 'Sports betting demo migrated to Next.js',
+  description: 'Sports betting App',
 };
 
 import '../assets/theme-dark.css';
