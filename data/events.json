@@ -2,7 +2,7 @@
   "events": [
     {
       "id": 3340789,
-      "label": "Turkey \/ Bulgaria",
+      "label": "England \/ Germany",
       "start": "2021-03-24T20:45:00.000+01:00",
       "competition": {
         "label": "World Cup Qualifications, UEFA"
@@ -25,7 +25,7 @@
               "odd": 3.9,
               "actor": {
                 "id": 28157,
-                "label": "Turkey"
+                "label": "England"
               }
             },
             {
@@ -41,7 +41,7 @@
               "odd": 1.68,
               "actor": {
                 "id": 28145,
-                "label": "Bulgaria"
+                "label": "Germany"
               }
             }
           ]
@@ -50,7 +50,7 @@
     },
     {
       "id": 3340790,
-      "label": "Lithuania \/ Montenegro",
+      "label": "Portugal \/ Netherlands",
       "start": "2021-03-24T20:45:00.000+01:00",
       "competition": {
         "label": "World Cup Qualifications, UEFA"
@@ -73,7 +73,7 @@
               "odd": 4.4,
               "actor": {
                 "id": 28201,
-                "label": "Lithuania"
+                "label": "Portugal"
               }
             },
             {
@@ -89,7 +89,7 @@
               "odd": 1.63,
               "actor": {
                 "id": 28172,
-                "label": "Montenegro"
+                "label": "Netherlands"
               }
             }
           ]
@@ -120,7 +120,7 @@
               "odd": 9,
               "actor": {
                 "id": 38122,
-                "label": "Estonia"
+                "label": "Norway"
               }
             },
             {
@@ -128,7 +128,7 @@
               "odd": 1.18,
               "actor": {
                 "id": 28158,
-                "label": "Czech Republic"
+                "label": "Spain"
               }
             }
           ]
@@ -137,13 +137,13 @@
     },
     {
       "id": 3240199,
-      "label": "Getafe \/ Valencia",
+      "label": "AC Milan \/ Inter Milan",
       "start": "2021-02-27T21:00:00.000+01:00",
       "competition": {
-        "label": "Liga Santander"
+        "label": "Serie A"
       },
       "category": {
-        "label": "Espagne"
+        "label": "Italy"
       },
       "sport": {
         "label": "Football",
@@ -160,7 +160,7 @@
               "odd": 2.42,
               "actor": {
                 "id": 379470,
-                "label": "Getafe"
+                "label": "AC Milan"
               }
             },
             {
@@ -176,7 +176,7 @@
               "odd": 3.15,
               "actor": {
                 "id": 379890,
-                "label": "Valencia"
+                "label": "Inter Milan"
               }
             },
             {
@@ -187,6 +187,204 @@
                 "label": "Other"
               }
             }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001001,
+      "label": "Manchester City \/ Arsenal",
+      "start": "2025-10-15T20:00:00.000+01:00",
+      "competition": { "label": "Premier League" },
+      "category": { "label": "England" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000001": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000001001, "odd": 1.9, "actor": { "id": 10001, "label": "Manchester City" } },
+            { "id": 5000001002, "odd": 3.4, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000001003, "odd": 3.6, "actor": { "id": 10002, "label": "Arsenal" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001002,
+      "label": "Real Madrid \/ Barcelona",
+      "start": "2025-10-16T20:00:00.000+01:00",
+      "competition": { "label": "LaLiga" },
+      "category": { "label": "Spain" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000002": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000002001, "odd": 2.3, "actor": { "id": 10003, "label": "Real Madrid" } },
+            { "id": 5000002002, "odd": 3.2, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000002003, "odd": 2.8, "actor": { "id": 10004, "label": "Barcelona" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001003,
+      "label": "Bayern Munich \/ Borussia Dortmund",
+      "start": "2025-10-17T20:30:00.000+01:00",
+      "competition": { "label": "Bundesliga" },
+      "category": { "label": "Germany" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000003": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000003001, "odd": 1.85, "actor": { "id": 10005, "label": "Bayern Munich" } },
+            { "id": 5000003002, "odd": 3.7, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000003003, "odd": 4.0, "actor": { "id": 10006, "label": "Borussia Dortmund" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001004,
+      "label": "Paris Saint-Germain \/ Marseille",
+      "start": "2025-10-18T21:00:00.000+01:00",
+      "competition": { "label": "Ligue 1" },
+      "category": { "label": "France" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000004": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000004001, "odd": 1.5, "actor": { "id": 10007, "label": "Paris Saint-Germain" } },
+            { "id": 5000004002, "odd": 4.2, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000004003, "odd": 6.0, "actor": { "id": 10008, "label": "Marseille" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001005,
+      "label": "Juventus \/ Napoli",
+      "start": "2025-10-19T20:45:00.000+01:00",
+      "competition": { "label": "Serie A" },
+      "category": { "label": "Italy" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000005": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000005001, "odd": 2.1, "actor": { "id": 10009, "label": "Juventus" } },
+            { "id": 5000005002, "odd": 3.1, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000005003, "odd": 3.3, "actor": { "id": 10010, "label": "Napoli" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001006,
+      "label": "Liverpool \/ Manchester United",
+      "start": "2025-10-20T17:30:00.000+01:00",
+      "competition": { "label": "Premier League" },
+      "category": { "label": "England" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000006": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000006001, "odd": 2.4, "actor": { "id": 10011, "label": "Liverpool" } },
+            { "id": 5000006002, "odd": 3.2, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000006003, "odd": 2.9, "actor": { "id": 10012, "label": "Manchester United" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001007,
+      "label": "Atletico Madrid \/ Sevilla",
+      "start": "2025-10-21T20:00:00.000+01:00",
+      "competition": { "label": "LaLiga" },
+      "category": { "label": "Spain" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000007": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000007001, "odd": 2.0, "actor": { "id": 10013, "label": "Atletico Madrid" } },
+            { "id": 5000007002, "odd": 3.3, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000007003, "odd": 3.9, "actor": { "id": 10014, "label": "Sevilla" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001008,
+      "label": "Chelsea \/ Tottenham",
+      "start": "2025-10-22T20:15:00.000+01:00",
+      "competition": { "label": "Premier League" },
+      "category": { "label": "England" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000008": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000008001, "odd": 2.25, "actor": { "id": 10015, "label": "Chelsea" } },
+            { "id": 5000008002, "odd": 3.25, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000008003, "odd": 3.2, "actor": { "id": 10016, "label": "Tottenham" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001009,
+      "label": "RB Leipzig \/ Bayer Leverkusen",
+      "start": "2025-10-23T18:30:00.000+01:00",
+      "competition": { "label": "Bundesliga" },
+      "category": { "label": "Germany" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000009": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000009001, "odd": 2.6, "actor": { "id": 10017, "label": "RB Leipzig" } },
+            { "id": 5000009002, "odd": 3.4, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000009003, "odd": 2.6, "actor": { "id": 10018, "label": "Bayer Leverkusen" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001010,
+      "label": "Ajax \/ PSV",
+      "start": "2025-10-24T19:45:00.000+01:00",
+      "competition": { "label": "Eredivisie" },
+      "category": { "label": "Netherlands" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000010": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000010001, "odd": 2.1, "actor": { "id": 10019, "label": "Ajax" } },
+            { "id": 5000010002, "odd": 3.5, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000010003, "odd": 3.1, "actor": { "id": 10020, "label": "PSV" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7001011,
+      "label": "Inter Miami \/ LA Galaxy",
+      "start": "2025-10-25T21:00:00.000+01:00",
+      "competition": { "label": "MLS" },
+      "category": { "label": "USA" },
+      "sport": { "label": "Football", "icon": "soccer" },
+      "bet": {
+        "960000011": {
+          "question": { "label": "Who will win ?" },
+          "choices": [
+            { "id": 5000011001, "odd": 1.95, "actor": { "id": 10021, "label": "Inter Miami" } },
+            { "id": 5000011002, "odd": 3.6, "actor": { "id": 1, "label": "Nul" } },
+            { "id": 5000011003, "odd": 3.8, "actor": { "id": 10022, "label": "LA Galaxy" } }
           ]
         }
       }
