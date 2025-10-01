@@ -17,6 +17,7 @@
   gap: 0;
   flex: 1;
   overflow-y: auto;
+  mask-image: linear-gradient(black, 87%, transparent);
 }
 
 .amount {
