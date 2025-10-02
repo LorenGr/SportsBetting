@@ -13,26 +13,25 @@ export default function BetSlip() {
       <h3 data-testid="bet-slip-title">Betslip</h3>
       <div className="divider" />
       <div className="selections" data-testid="bet-slip-selections">
-        {selections.length === 0 ? (
+        {selections.length === 0 && (
           <div className="muted small" data-testid="bet-slip-empty">
             No bets chosen.
           </div>
-        ) : (
-          <AnimatePresence>
-            {selections.map((s) => (
-              <motion.div
-                key={s.id}
-                initial={{ opacity: 0, y: -10, height: 0 }}
-                animate={{ opacity: 1, y: 0, height: 'auto' }}
-                exit={{ opacity: 0, y: 10, height: 0 }}
-                transition={{ duration: 0.3, ease: [0, 0.047, 0, 1.066] }}
-                style={{ flex: 'none', overflow: 'hidden' }}
-              >
-                <BetSlipSelection selection={s} onRemove={handleRemove} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
         )}
+        <AnimatePresence>
+          {selections.map((s) => (
+            <motion.div
+              key={s.id}
+              initial={{ opacity: 0, y: -10, height: 0 }}
+              animate={{ opacity: 1, y: 0, height: 'auto' }}
+              exit={{ opacity: 0, y: 10, height: 0 }}
+              transition={{ duration: 0.3, ease: [0, 0.047, 0, 1.066] }}
+              style={{ flex: 'none', overflow: 'hidden' }}
+            >
+              <BetSlipSelection selection={s} onRemove={handleRemove} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
       <div className="divider" />
       <div className="slip-row">
