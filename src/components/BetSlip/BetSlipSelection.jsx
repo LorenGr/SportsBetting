@@ -52,19 +52,6 @@ export default function BetSlipSelection({ selection, onRemove }) {
     })
   }, [])
 
-  const animateContainer = useCallback(() => {
-    const containerEl = containerRef.current
-    if (!containerEl) return
-    animateRef.current.animate(containerEl, {
-      opacity: [{ from: 0 }, { to: 1 }],
-      scale: [{ from: 0 }, { to: 1 }],
-      height: [{ from: 0 }, { to: 'auto' }],
-      duration: 900,
-      delay: 0,
-      ease: animateRef.current.cubicBezier(0.041, 1.103, 0.279, 0.995),
-    })
-  }, [])
-
   useEffect(() => {
     setContentVisible(false)
 
@@ -93,7 +80,6 @@ export default function BetSlipSelection({ selection, onRemove }) {
         }
 
         if (cancelled) return
-        animateContainer()
         animateContents()
         animateSquares(squaresEls, fromIndex)
       } catch (_) {
@@ -109,7 +95,7 @@ export default function BetSlipSelection({ selection, onRemove }) {
         animation && animation.cancel && animation.cancel()
       } catch (_) {}
     }
-  }, [selection?.id, totalSquares, animateContainer, animateContents, animateSquares])
+  }, [selection?.id, totalSquares, animateContents, animateSquares])
 
   return (
     <div className="selection-item-container" ref={containerRef}>
