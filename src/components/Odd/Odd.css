@@ -21,7 +21,7 @@
   margin-right: 11px;
 
   &::after {
-    content: "/";
+    content: '/';
     display: block;
     width: 1px;
   }
@@ -48,13 +48,16 @@
   background: rgba(255, 255, 255, 0.02);
   cursor: pointer;
   color: inherit;
+  transition: all 0.2s;
 }
 .odds:hover {
   border-color: var(--text-color);
+  box-shadow: 0 0 2rem 0 rgba(255, 255, 255, 0.15);
 }
 .odds.selected {
   border: var(--container-border);
   background: rgba(34, 197, 94, 0.3);
+  scale: 1.04;
 }
 .odds-label {
   text-align: center;
@@ -67,8 +70,16 @@
 
 /* Tighter layout on small screens */
 @media (max-width: 420px) {
-  .match-card { padding: 10px 12px; }
-  .odds-grid { gap: 8px; }
-  .odds { padding: 8px 10px; }
-  .odds-price { font-size: 14px; }
+  .match-card {
+    padding: 10px 12px;
+  }
+  .odds-grid {
+    gap: 8px;
+  }
+  .odds {
+    padding: 8px 10px;
+  }
+  .odds-price {
+    font-size: 14px;
+  }
 }
